@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.MineFragment">
+
+    <ImageView
+        android:id="@+id/mine_bg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintHeight_percent="0.3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mine_portrait"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="@id/mine_bg"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintLeft_toLeftOf="@id/mine_bg"
+        app:layout_constraintRight_toRightOf="@id/mine_bg"
+        app:layout_constraintTop_toTopOf="@id/mine_bg" />
+
+    <TextView
+        android:id="@+id/mine_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="快快"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/mine_portrait"
+        app:layout_constraintLeft_toRightOf="@id/mine_portrait"
+        app:layout_constraintTop_toTopOf="@id/mine_portrait"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <TextView
+        android:id="@+id/mine_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="发现美，走进美……"
+        android:textColor="#fff"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/mine_portrait"
+        app:layout_constraintLeft_toRightOf="@id/mine_portrait"
+        app:layout_constraintTop_toTopOf="@id/mine_portrait"
+        app:layout_constraintVertical_bias="1" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/mine_title"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="#fff"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintTop_toBottomOf="@id/mine_bg">
+
+        <TextView
+            android:id="@+id/mine_record"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/mine_text_bg"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="4dp"
+            android:text="识花记录"
+            android:textColor="#63daba"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/mine_administrate" />
+
+        <TextView
+            android:id="@+id/mine_administrate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="4dp"
+            android:text="帐号管理"
+            android:textColor="#000"
+            android:textSize="16sp"
+            app:layout_constraintLeft_toRightOf="@id/mine_record"
+            app:layout_constraintRight_toRightOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mine_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingLeft="8dp"
+        android:paddingTop="16dp"
+        android:paddingRight="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mine_title" />
+
+</android.support.constraint.ConstraintLayout>

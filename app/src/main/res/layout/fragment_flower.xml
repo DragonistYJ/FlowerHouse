@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.FlowerFragment">
+
+    <TextView
+        android:id="@+id/flower_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/flower_detail_gradient"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="花房识花"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/flower_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:src="@mipmap/flower_clover"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28"
+        app:layout_constraintWidth_percent="0.9" />
+
+    <ImageView
+        android:id="@+id/flower_image_search"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/flower_search"
+        android:padding="15dp"
+        android:tint="#FFF"
+        app:layout_constraintBottom_toBottomOf="@id/flower_bg"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/flower_bg"
+        app:layout_constraintTop_toTopOf="@id/flower_bg"
+        app:layout_constraintVertical_bias="0.26"
+        app:srcCompat="@drawable/ic_search" />
+
+    <View
+        android:id="@+id/flower_view_line1"
+        android:layout_width="60dp"
+        android:layout_height="1dp"
+        android:layout_alignBottom="@+id/flower_image_search"
+        android:background="#000"
+        app:layout_constraintBottom_toBottomOf="@id/flower_image_search"
+        app:layout_constraintRight_toLeftOf="@+id/flower_image_search"
+        app:layout_constraintTop_toTopOf="@id/flower_image_search" />
+
+    <View
+        android:id="@+id/flower_view_line2"
+        android:layout_width="1dp"
+        android:layout_height="50dp"
+        android:background="#000"
+        app:layout_constraintBottom_toBottomOf="@+id/flower_view_line1"
+        app:layout_constraintRight_toLeftOf="@id/flower_view_line1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flower_text_box"
+        android:padding="4dp"
+        android:text="搜索您想认识的花"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/flower_view_line2"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/flower_image_camera"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/flower_camera"
+        android:padding="15dp"
+        android:tint="#FFF"
+        app:layout_constraintBottom_toBottomOf="@id/flower_bg"
+        app:layout_constraintHorizontal_bias="0.7"
+        app:layout_constraintLeft_toLeftOf="@id/flower_bg"
+        app:layout_constraintRight_toRightOf="@+id/flower_bg"
+        app:layout_constraintTop_toTopOf="@+id/flower_bg"
+        app:layout_constraintVertical_bias="0.4"
+        app:srcCompat="@drawable/ic_camera" />
+
+    <View
+        android:id="@+id/flower_view_line3"
+        android:layout_width="50dp"
+        android:layout_height="1dp"
+        android:background="#000"
+        app:layout_constraintBottom_toBottomOf="@id/flower_image_camera"
+        app:layout_constraintLeft_toRightOf="@+id/flower_image_camera"
+        app:layout_constraintTop_toTopOf="@id/flower_image_camera" />
+
+    <View
+        android:id="@+id/flower_view_line4"
+        android:layout_width="1dp"
+        android:layout_height="120dp"
+        android:background="#000"
+        app:layout_constraintBottom_toTopOf="@+id/flower_view_line3"
+        app:layout_constraintRight_toRightOf="@id/flower_view_line3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flower_text_box"
+        android:padding="4dp"
+        android:text="拍一拍，你就知道"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/flower_view_line4"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/flower_image_album"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/flower_album"
+        android:padding="15dp"
+        android:tint="#FFF"
+        app:layout_constraintBottom_toBottomOf="@id/flower_bg"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintLeft_toLeftOf="@+id/flower_bg"
+        app:layout_constraintRight_toRightOf="@id/flower_bg"
+        app:layout_constraintTop_toTopOf="@+id/flower_bg"
+        app:layout_constraintVertical_bias="0.65"
+        app:srcCompat="@drawable/ic_album" />
+
+    <View
+        android:id="@+id/flower_view_line5"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:background="#000"
+        app:layout_constraintBottom_toBottomOf="@+id/flower_image_album"
+        app:layout_constraintRight_toLeftOf="@id/flower_image_album"
+        app:layout_constraintTop_toTopOf="@id/flower_image_album" />
+
+    <View
+        android:id="@+id/flower_view_line6"
+        android:layout_width="1dp"
+        android:layout_height="105dp"
+        android:background="#000"
+        app:layout_constraintLeft_toLeftOf="@+id/flower_view_line5"
+        app:layout_constraintTop_toBottomOf="@+id/flower_view_line5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flower_text_box"
+        android:padding="4dp"
+        android:text="看看相册不认识的花花吧"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flower_view_line6" />
+
+    <ImageView
+        android:id="@+id/flower_image_category"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/flower_category"
+        android:padding="15dp"
+        android:tint="#FFF"
+        app:layout_constraintBottom_toBottomOf="@id/flower_bg"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintLeft_toLeftOf="@id/flower_bg"
+        app:layout_constraintRight_toRightOf="@+id/flower_bg"
+        app:layout_constraintTop_toTopOf="@+id/flower_bg"
+        app:layout_constraintVertical_bias="0.8"
+        app:srcCompat="@drawable/ic_category" />
+
+    <View
+        android:id="@+id/flower_view_line7"
+        android:layout_width="80dp"
+        android:layout_height="1dp"
+        android:background="#000"
+        app:layout_constraintBottom_toBottomOf="@+id/flower_image_category"
+        app:layout_constraintLeft_toRightOf="@id/flower_image_category"
+        app:layout_constraintTop_toTopOf="@id/flower_image_category" />
+
+    <View
+        android:id="@+id/flower_view_line8"
+        android:layout_width="1dp"
+        android:layout_height="120dp"
+        android:background="#000"
+        app:layout_constraintRight_toRightOf="@+id/flower_view_line7"
+        app:layout_constraintTop_toBottomOf="@+id/flower_view_line7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/flower_text_box"
+        android:padding="4dp"
+        android:text="点这里试试分类查询吧"
+        android:textColor="#000"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flower_view_line8" />
+
+    <LinearLayout
+        android:id="@+id/flower_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/flower_vine"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="花房，遇见花"
+            android:textColor="#F3B373"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

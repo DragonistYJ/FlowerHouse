@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_whole"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.GameFragment">
+
+    <TextView
+        android:id="@+id/game_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/flower_detail_gradient"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="识花大考验"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/game_linear1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintHeight_percent="0.36"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/game_title"
+        app:layout_constraintWidth_percent="0.7">
+
+        <TextView
+            android:id="@+id/game_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="薰衣草"
+            android:textColor="#63daba"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/game_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="等你，在一望无际的薰衣草田……"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/game_img1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintHeight_percent="0.18"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/game_linear1"
+        app:layout_constraintWidth_percent="0.49" />
+
+    <ImageView
+        android:id="@+id/game_cross1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:layout_constraintHeight_percent="0.18"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/game_linear1"
+        app:layout_constraintWidth_percent="0.49"
+        app:srcCompat="@drawable/ic_cross" />
+
+    <ImageView
+        android:id="@+id/game_img2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintHeight_percent="0.18"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/game_linear1"
+        app:layout_constraintWidth_percent="0.49" />
+
+    <ImageView
+        android:id="@+id/game_cross2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:layout_constraintHeight_percent="0.18"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/game_linear1"
+        app:layout_constraintWidth_percent="0.49"
+        app:srcCompat="@drawable/ic_cross" />
+
+    <ImageView
+        android:id="@+id/game_img3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="fitXY"
+        app:layout_constraintHeight_percent="0.18"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/game_img1"
+        app:layout_constraintWidth_percent="0.49" />
+
+    <ImageView
+        android:id="@+id/game_cross3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:layout_constraintHeight_percent="0.18"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/game_img1"
+        app:layout_constraintWidth_percent="0.49"
+        app:srcCompat="@drawable/ic_cross" />
+
+    <ImageView
+        android:id="@+id/game_img4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintHeight_percent="0.18"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/game_img3"
+        app:layout_constraintWidth_percent="0.49" />
+
+    <ImageView
+        android:id="@+id/game_cross4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:layout_constraintHeight_percent="0.18"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/game_img3"
+        app:layout_constraintWidth_percent="0.49"
+        app:srcCompat="@drawable/ic_cross" />
+
+    <Button
+        android:id="@+id/game_btn_next"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/game_btn_bg"
+        android:text="下一题"
+        android:textColor="#AAAAAA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/game_img4"
+        app:layout_constraintTop_toBottomOf="@id/game_img4" />
+
+</android.support.constraint.ConstraintLayout>

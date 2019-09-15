@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_main_home"
+        android:title="每日精选" />
+
+    <item
+        android:id="@+id/navigation_flower"
+        android:icon="@drawable/ic_main_flower"
+        android:title="花房识花" />
+
+    <item
+        android:id="@+id/navigation_game"
+        android:icon="@drawable/ic_main_game"
+        android:title="小游戏" />
+
+    <item
+        android:id="@+id/navigation_mine"
+        android:icon="@drawable/ic_main_mine"
+        android:title="我的" />
+
+</menu>

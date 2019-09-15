@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_home_push_whole"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/item_home_push_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_weight="1"
+            android:background="#000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="精选花朵" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:layout_weight="1"
+            android:background="#000" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/item_home_push_flower"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_home_push_title" />
+
+    <View
+        android:id="@+id/item_home_push_line"
+        android:layout_width="0.5dp"
+        android:layout_height="28dp"
+        android:layout_marginLeft="16dp"
+        android:background="#000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_home_push_flower" />
+
+    <TextView
+        android:id="@+id/item_home_push_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="樱花"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/item_home_push_line"
+        app:layout_constraintLeft_toRightOf="@+id/item_home_push_line" />
+
+    <TextView
+        android:id="@+id/item_home_push_language"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="sdjflkajdsflkjaslfkjal\ndjfslkjflksjflksj"
+        android:textColor="#888888"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@+id/item_home_push_name"
+        app:layout_constraintRight_toLeftOf="@id/item_home_push_class"
+        app:layout_constraintTop_toBottomOf="@+id/item_home_push_name" />
+
+    <TextView
+        android:id="@+id/item_home_push_class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TA"
+        android:textColor="#3b8cfb"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/item_home_push_name"
+        app:layout_constraintRight_toLeftOf="@id/item_home_push_class_small" />
+
+    <TextView
+        android:id="@+id/item_home_push_class_small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="djfklsjdfklsdjflks"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/item_home_push_name"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_marginTop="8dp"
+        android:background="#e3e7ea"
+        app:layout_constraintTop_toBottomOf="@id/item_home_push_language" />
+</android.support.constraint.ConstraintLayout>
